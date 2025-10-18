@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Joshua Fernandez | Exercise 6</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            Joshua Fernandez | 105735912
+        </a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="index.html">Exercise 4</a>
+            <a href="exercise5.html">Exercise 5</a>
+            <a href="exercise6.html" class="active">Exercise 6</a>
+        </nav>
+    </header>
+
+    <section id="exercise-page">
+        <h1 class="heading">Exercise 6: Interactive Charts</h1>
+        <div class="project-container">
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div class="project-title">
+                        <h3>Interactive Histogram</h3>
+                        <p>Energy consumption distribution for different screen technologies. Use the buttons to filter.</p>
+                    </div>
+                    <button class="details-btn">Show Chart</button>
+                </div>
+                <div class="project-details">
+                    <div id="chart-part-1">
+                        <div id="filters"></div>
+                        <div id="histogram-chart" class="responsive-svg-container"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-item">
+                <div class="project-header">
+                    <div class="project-title">
+                        <h3>Interactive Scatterplot with Tooltips</h3>
+                        <p>Star rating vs. screen size, color-coded by technology. Hover over a point to see its details.</p>
+                    </div>
+                    <button class="details-btn">Show Chart</button>
+                </div>
+                <div class="project-details">
+                    <div id="chart-part-2" class="responsive-svg-container">
+                         </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="copyright">© Joshua Fernandez | 105735912</p>
+    </footer>
+    
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="exercise6_part1.js"></script>
+    <script src="exercise6_part2.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

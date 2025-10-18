@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Fernandez | Exercise 5</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            Joshua Fernandez | 105735912
+        </a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+       <nav class="navbar">
+            <a href="index.html">Exercise 4</a>
+            <a href="exercise5.html">Exercise 5</a>
+            <a href="exercise6.html" class="active">Exercise 6</a>
+        </nav>
+    </header>
+
+    <section id="d3-dashboard">
+        <h1 class="heading">D3 Charts Dashboard</h1>
+
+        <div class="project-container">
+            <div class="project-item">
+                <div class="project-title">
+                    <h3>Scatter Plot: Screen Size vs. Energy</h3>
+                    <p>Analyzing the relationship between a TV's screen size and its energy consumption.</p>
+                </div>
+                <div id="scatter-plot-container" class="responsive-svg-container"></div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">
+                    <h3>Donut Chart: Model Count by Technology</h3>
+                    <p>A breakdown of the number of TV models for each screen technology.</p>
+                </div>
+                <div id="donut-chart-container" class="responsive-svg-container"></div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">
+                    <h3>Bar Chart: Average Energy by Technology</h3>
+                    <p>A comparison of the average energy consumption for different screen technologies.</p>
+                </div>
+                <div id="bar-chart-container" class="responsive-svg-container"></div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">
+                    <h3>Line Chart: TV Model Frequency by Size</h3>
+                    <p>The number of available TV models at different screen sizes.</p>
+                </div>
+                <div id="line-chart-container" class="responsive-svg-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="copyright">
+            © Joshua Fernandez | 105735912
+        </p>
+    </footer>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <script src="scatter_plot.js"></script>
+    <script src="donut_chart.js"></script>
+    <script src="bar_chart_55inch.js"></script>
+    <script src="line_chart.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
